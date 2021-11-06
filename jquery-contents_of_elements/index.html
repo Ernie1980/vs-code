@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contents of elements</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("#clickme").click(function(){
+                alert($("#clickme").text());
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="clickme">Click me</button>
+    <div id="mydiv">
+        Welcome!
+        <input id="myinput" type="text" placeholder="Enter your name" value="My input value">
+    </div>
+</body>
+</html>
